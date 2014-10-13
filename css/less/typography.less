@@ -1,0 +1,72 @@
+// main: app.less
+
+/* ----------------------------------------------------------------
+ * colors.less
+ * 
+ * All color variables come in here
+ * ---------------------------------------------------------------- */
+
+@import 'fonts.less';
+
+@text-size : 0.9em;
+@p-size    : 0.9em;
+
+body {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	font-weight: 400;
+}
+
+h1 {
+  font-size: 1.9375em;
+  line-height: 1.548387096em;
+}
+
+h2 {
+  font-size: 1.5625em;
+  line-height: 1.92em;
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* Sanitation */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+b, strong, em, small, code {
+  line-height: 1;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}

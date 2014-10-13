@@ -1,0 +1,167 @@
+// main: app.less
+
+/* ----------------------------------------------------------------
+ * components.less
+ * 
+ * Site components like header, footer, etc as well as generic components like message, container, etc come in here
+ * 
+ * Menu :
+ * 	imports
+ *  body
+ * 	header
+ *  main
+ *  sidebar
+ * 	avatar
+ * ---------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+ * $imports
+ * ---------------------------------------------------------------- */
+@import 'colors.less';
+@import 'typography.less';
+
+
+/* ----------------------------------------------------------------
+ * $body
+ * ---------------------------------------------------------------- */
+body {
+	width: 100%;
+	min-height: 100%;
+	height:100%;
+}
+
+section1 {
+	height:100%!important;
+	position: relative;
+}
+
+.section1 > .row {
+	width:65%;
+	margin: 0 auto;
+}
+
+.section2 {
+	height:100%;
+}
+
+
+/* ----------------------------------------------------------------
+ * $sections
+ * ---------------------------------------------------------------- */
+.section1 {
+	width:100%;
+	height:100%!important;
+	
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+}
+
+.section2 {
+	width:100%;
+	min-height: 100%;
+	padding: 64px 0;
+	
+	box-sizing: border-box;
+	background-image: url(../img/pattern.png);
+	background-repeat: repeat;
+}
+	
+/* ----------------------------------------------------------------
+ * $header
+ * ---------------------------------------------------------------- */
+.site-header {
+	width:100%;
+	padding: 32px 0;
+}
+
+.site-header-nav {
+	width:65%;
+	height:76px;
+	margin: 0 auto;
+}
+
+.nav-item, .nav-title {
+	display: inline-block;
+}
+
+.nav-item {
+	float: right;
+	margin-top: 24px;
+	padding: 6px 18px;
+	
+	font-weight: 700;
+	color:rgba(255, 255, 255, 0.9);
+	
+	border:rgba(255, 255, 255, 0.9) solid 2px;
+	border-radius: 3px;
+	
+	cursor: pointer;
+}
+
+.nav-item:last-child {
+	margin-right:32px;
+}
+
+.nav-item:hover, .nav-item:active {
+	color:#FFF;
+	border-color: #FFF;
+	box-shadow: 0 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.nav-title {
+	float: left;
+	
+	font-weight: 700;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	color:#FFF;
+	
+	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* ----------------------------------------------------------------
+ * $section1 content
+ * ---------------------------------------------------------------- */
+.tag-line {
+	margin: 92px 0;
+	color:#FFF;
+	
+	font-family: georgia, 'serif';
+	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.tag-line > h2 {
+	font-size: 3.6em;
+	line-height: 1.2em;
+}
+
+.info {
+	position: absolute;
+	bottom:0;
+	right:0;
+	padding: 8px 24px;
+	width:100%;
+	
+	text-align: right;
+	
+	color:rgba(255, 255, 255, 0.6);
+}
+
+
+/* ----------------------------------------------------------------
+ * $section2 content
+ * ---------------------------------------------------------------- */
+.section2 > .row {
+	width:65%;
+}
+
+
+/* ----------------------------------------------------------------
+ * $utils
+ * ---------------------------------------------------------------- */
+.clearfix:after {
+	clear: both;
+	display: block;
+	content:'';
+}
