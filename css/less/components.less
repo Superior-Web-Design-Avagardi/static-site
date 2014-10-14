@@ -23,6 +23,12 @@
 
 
 /* ----------------------------------------------------------------
+ * $vars
+ * ---------------------------------------------------------------- */
+@width : 65%;
+
+
+/* ----------------------------------------------------------------
  * $body
  * ---------------------------------------------------------------- */
 body {
@@ -36,36 +42,11 @@ section1 {
 	position: relative;
 }
 
-.section1 > .row {
-	width:65%;
-	margin: 0 auto;
-}
 
 .section2 {
 	height:100%;
 }
 
-
-/* ----------------------------------------------------------------
- * $sections
- * ---------------------------------------------------------------- */
-.section1 {
-	width:100%;
-	height:100%!important;
-	
-	background-image: url(../img/background.jpg);
-	background-size: cover;
-}
-
-.section2 {
-	width:100%;
-	min-height: 100%;
-	padding: 64px 0;
-	
-	box-sizing: border-box;
-	background-image: url(../img/pattern.png);
-	background-repeat: repeat;
-}
 	
 /* ----------------------------------------------------------------
  * $header
@@ -76,7 +57,7 @@ section1 {
 }
 
 .site-header-nav {
-	width:65%;
+	width:@width;
 	height:76px;
 	margin: 0 auto;
 }
@@ -123,6 +104,20 @@ section1 {
 /* ----------------------------------------------------------------
  * $section1 content
  * ---------------------------------------------------------------- */
+.section1 {
+	width:100%;
+	height:100%!important;
+	
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+}
+
+.section1 > .row {
+	width:@width;
+	margin: 0 auto;
+}
+
+
 .tag-line {
 	margin: 92px 0;
 	color:#FFF;
@@ -152,8 +147,57 @@ section1 {
 /* ----------------------------------------------------------------
  * $section2 content
  * ---------------------------------------------------------------- */
+.section2 {
+	width:100%;
+	min-height: 100%;
+	padding: 64px 0;
+	
+	box-sizing: border-box;
+	background-image: url(../img/pattern.png);
+	background-repeat: repeat;
+}
+
 .section2 > .row {
-	width:65%;
+	width:@width;
+}
+
+.panel {
+	height:192px;
+	background-size: cover;
+}
+
+/* ----------------------------------------------------------------
+ * $section3 content
+ * ---------------------------------------------------------------- */
+.section3 {
+	width:100%;
+	min-height: 100%;
+	padding: 64px 0;
+	
+	box-sizing: border-box;
+	background-image: url(../img/pattern.png);
+	background-repeat: repeat;
+}
+
+.section3 > .row {
+	width:@width;
+}
+
+
+/* ----------------------------------------------------------------
+ * $section4 content
+ * ---------------------------------------------------------------- */
+.section4 {
+	width:100%;
+	padding: 64px 0;
+	
+	box-sizing: border-box;
+	color: #BDC3C7;
+	background-color: #2C3E50;
+}
+
+.section4 > .row {
+	width:@width;
 }
 
 
