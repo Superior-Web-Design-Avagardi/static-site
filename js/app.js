@@ -12,8 +12,8 @@
 			}, 500);
 		},
 		registerInterest : function(e) {
-			var str = '<article class="modal-inner"><h2>Hi there</h2><span class="close icon-cross" data-action="modalClose"></span>';
-			str += '<p>Please enter your email to stay up to date with our latest products</p>';
+			var str = '<article class="modal-inner"><h2 class="center">Hi there</h2><span class="close icon-cross" data-action="modalClose"></span>';
+			str += '<p class="center">Please enter your email to stay up to date with our latest products</p>';
 			str += '<form><label for="email">Your email</label><br><input type="email" class="full" placeholder="name@provider.com" id="email">';
 			str += '<input type="submit" value="Subscribe" class="full"></form>';
 			str += '</article>';

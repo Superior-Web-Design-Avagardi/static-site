@@ -26,6 +26,8 @@
  * $vars
  * ---------------------------------------------------------------- */
 @width : 65%;
+@background: url(../img/background.jpg);
+@pattern: url(../img/pattern.png);
 
 
 /* ----------------------------------------------------------------
@@ -108,7 +110,7 @@ section1 {
 	width:100%;
 	height:100%!important;
 	
-	background-image: url(../img/background.jpg);
+	background-image: @background;
 	background-size: cover;
 }
 
@@ -153,7 +155,7 @@ section1 {
 	padding: 64px 0;
 	
 	box-sizing: border-box;
-	background-image: url(../img/pattern.png);
+	background-image: @pattern;
 	background-repeat: repeat;
 }
 
@@ -163,6 +165,7 @@ section1 {
 
 .panel {
 	height:192px;
+	margin-bottom: 16px;
 	background-size: cover;
 }
 
@@ -175,7 +178,7 @@ section1 {
 	padding: 64px 0;
 	
 	box-sizing: border-box;
-	background-image: url(../img/pattern.png);
+	background-image: @pattern;
 	background-repeat: repeat;
 }
 
@@ -208,4 +211,15 @@ section1 {
 	clear: both;
 	display: block;
 	content:'';
+}
+
+.modal-inner {
+	background-color: #FFF;
+	padding: 32px;
+	border:#DDD solid 2px;
+	border-radius: 6px;
+}
+
+.center {
+	text-align: center;
 }

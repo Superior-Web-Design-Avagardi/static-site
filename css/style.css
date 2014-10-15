@@ -296,6 +296,7 @@ section1 {
 }
 .panel {
   height: 192px;
+  margin-bottom: 16px;
   background-size: cover;
 }
 /* ----------------------------------------------------------------
@@ -332,6 +333,15 @@ section1 {
   clear: both;
   display: block;
   content: '';
+}
+.modal-inner {
+  background-color: #FFF;
+  padding: 32px;
+  border: #DDD solid 2px;
+  border-radius: 6px;
+}
+.center {
+  text-align: center;
 }
 /* ----------------------------------------------------------------
  * form.less
@@ -609,7 +619,7 @@ label {
   -webkit-perspective: 1000;
   backface-visibility: hidden;
   perspective: 1000;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   -webkit-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   -moz-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   -ms-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
