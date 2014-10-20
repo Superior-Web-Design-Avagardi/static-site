@@ -1,0 +1,96 @@
+// main: app.less
+
+/* ----------------------------------------------------------------
+ * media-queries.less
+ * 
+ * All media queries are here. Does stuff for mobile only
+ * ---------------------------------------------------------------- */
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+	
+	.nav-title, .nav-item {
+		float: none;
+		display: block;
+		width:100%;
+		margin: 8px 0;
+		
+		text-align: center;
+		box-sizing: border-box;
+	}
+	
+	.tag-line {
+		text-align: center;
+	}
+	
+	@width : 80%;
+	.site-header-nav {
+		width: @width;
+		height: auto;
+	}
+	.section1 > .row {
+		width:@width;
+		margin: 0 auto;
+	}
+	.section2 > .row {
+		width:@width;
+	}
+	.section3 > .row {
+		width:@width;
+	}
+	.section4 > .row {
+		width:@width;
+	}
+	
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+	.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+		margin:0;
+		width:100%!important;
+		float: none;
+	}
+	
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+	
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	@width : 70%;
+	.site-header-nav {
+		width :@width;
+	}
+	.section1 > .row {
+		width:@width;
+		margin: 0 auto;
+	}
+	.section2 > .row {
+		width:@width;
+	}
+	.section3 > .row {
+		width:@width;
+	}
+	.section4 > .row {
+		width:@width;
+	}
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
