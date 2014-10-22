@@ -719,6 +719,9 @@ label {
   .tag-line {
     text-align: center;
   }
+  .section2 {
+    height: auto;
+  }
   .site-header-nav {
     width: 80%;
     height: auto;
@@ -757,6 +760,9 @@ label {
 /* Smartphones (portrait) ----------- */
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .section2 {
+    height: auto;
+  }
   .site-header-nav {
     width: 70%;
   }
