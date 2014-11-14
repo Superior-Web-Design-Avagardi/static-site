@@ -10,9 +10,12 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css">
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="css/ie.css" />
+		<![endif]-->
 		
 		<script src="js/jquery.js"></script>
-		<script src="js/modal.js"></script>
+		<script src="js/jquery.simplemodal.1.4.4.min.js"></script>
 		<script src="js/app.js"></script>
 	</head>
 	
@@ -133,6 +136,16 @@ Welcome to the next evolution of lighting.
 				
 			</div>
 		</footer>
+		
+		<script id="modal-template" type="text/x-handlebars-template">
+			<article class="modal-inner"><h2 class="center">Hi there</h2>
+				<p class="center">Please enter your email to stay up to date with our latest products</p>
+				<form>
+				<br>
+				<input type="email" class="full" placeholder="name@provider.com" id="email">
+				<input type="submit" value="Subscribe" class="full"></form>
+			</article>
+		</script>
 		
 	</body>
 
