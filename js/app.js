@@ -43,9 +43,6 @@
 	function addListners() {
 		$('[data-action="aboutUs"]').click(fx.aboutUs);
 		$('[data-action="registerInterest"]').click(fx.registerInterest);
-		$(document).on('click', '.close', function() {
-			$.modal.close();
-		});
 	}
 	
 	function slideShow() {
