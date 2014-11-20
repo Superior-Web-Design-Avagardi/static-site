@@ -27,11 +27,15 @@
 			}, 500);
 		},
 		registerInterest : function(e) {
-			var options = {
-				closeClass : 'simplemodal-close close icon-cross',
-				maxWidth : 420
-			};
-			$.modal($('#modal-template').html(), options);
+			var html = $('#modal-template').html();
+			Modal.open({
+				content : html,
+				draggable : false,
+				hideClose : true,
+				openCallback : function() {
+					$('input[type="email"]').focus();
+				}
+			});
 		}
 	};
 	var modal;
