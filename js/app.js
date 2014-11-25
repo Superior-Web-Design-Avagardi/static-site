@@ -36,6 +36,11 @@
 					$('input[type="email"]').focus();
 				}
 			});
+		},
+		sendEmail : function(e) {
+			setTimeout(function() {
+				$('.modal-inner').addClass('center').html('<h3>Thank you for signing up for our newsletter.</h3><br><p>Stay tuned for more updates!</p>');
+			}, 200);
 		}
 	};
 	var modal;
@@ -43,6 +48,7 @@
 	function addListners() {
 		$('[data-action="aboutUs"]').click(fx.aboutUs);
 		$('[data-action="registerInterest"]').click(fx.registerInterest);
+		$(document).on('submit', '#mc-embedded-subscribe-form', fx.sendEmail);
 	}
 	
 	function slideShow() {

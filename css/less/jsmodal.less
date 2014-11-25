@@ -3,11 +3,11 @@
 /* ----------------------------------------------------------------
  * jsmodal.less
  * 
- * For jsmodal
+ * For jsmodal. This is a modified version of the css provided by jsmodal
  * ---------------------------------------------------------------- */
 
 #modal-overlay {
-  background: #fff;
+  background: #000;
   filter: alpha(opacity=60);
   height: 100%;
   left: 0;
@@ -16,13 +16,14 @@
   -ms-filter: alpha(opacity=60);
   opacity: 0.6;
   position: absolute;
-  top: 0;
+  bottom: 0;
   width: 100%;
   z-index: 998;
 }
 
 #modal-container {
   height: auto;
+	bottom: 0;
   padding: 10px;
   font-size: 14px;
   position: absolute;
@@ -64,4 +65,11 @@
 
 #modal-container.modal-loading {
   background: #fff url('../images/jsmodal/loading.gif') no-repeat center center;
+}
+
+.modal-inner {
+	background-color: #FFF;
+	padding: 32px;
+	border:#DDD solid 2px;
+	border-radius: 6px;
 }
