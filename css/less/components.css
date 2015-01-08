@@ -1,0 +1,289 @@
+/* ----------------------------------------------------------------
+ * components.less
+ * 
+ * Site components like header, footer, etc as well as generic components like message, container, etc come in here
+ * 
+ * Menu :
+ * 	imports
+ *  body
+ * 	header
+ *  main
+ *  sidebar
+ * 	avatar
+ * ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+ * $imports
+ * ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+ * colors.less
+ * 
+ * All color variables come in here
+ * ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+ * colors.less
+ * 
+ * All color variables come in here
+ * ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+ * icon-fonts.less
+ * 
+ * Custom fonts and other stuff come here
+ * ---------------------------------------------------------------- */
+@font-face {
+  font-family: 'giorgio';
+  src: url('fonts/giorgio.ttf?lhgt3k') format('truetype');
+  font-weight: normal;
+  font-style: normal;/*src:url('fonts/icomoon.eot?lhgt3k');*/
+  /*url('fonts/icomoon.eot?#iefixlhgt3k') format('embedded-opentype'),
+  		url('fonts/icomoon.woff?lhgt3k') format('woff'),
+  		url('fonts/icomoon.svg?lhgt3k#icomoon') format('svg');*/
+}
+@font-face {
+  font-family: 'giorgio-thin';
+  src: url('fonts/giorgio-thin.ttf?lhgt3k') format('truetype');
+  font-weight: normal;
+  font-style: normal;/*src:url('fonts/icomoon.eot?lhgt3k');*/
+  /*url('fonts/icomoon.eot?#iefixlhgt3k') format('embedded-opentype'),
+  		url('fonts/icomoon.woff?lhgt3k') format('woff'),
+  		url('fonts/icomoon.svg?lhgt3k#icomoon') format('svg');*/
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'giorgio';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-drawer:before {
+  content: "\e600";
+}
+.icon-heart:before {
+  content: "\e602";
+}
+.icon-heart2:before {
+  content: "\e603";
+}
+.icon-cross:before {
+  content: "\e601";
+}
+body {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 400;
+}
+h1 {
+  font-size: 1.9375em;
+  line-height: 1.548387096em;
+}
+h2 {
+  font-size: 1.5625em;
+  line-height: 1.92em;
+}
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* Sanitation */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+b,
+strong,
+em,
+small,
+code {
+  line-height: 1;
+}
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
+/* ----------------------------------------------------------------
+ * $vars
+ * ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+ * $body
+ * ---------------------------------------------------------------- */
+body {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+section1 {
+  height: 100%!important;
+  position: relative;
+}
+.section2 {
+  height: 100%;
+}
+/* ----------------------------------------------------------------
+ * $header
+ * ---------------------------------------------------------------- */
+.site-header {
+  width: 100%;
+  padding: 32px 0;
+}
+.site-header-nav {
+  width: 65%;
+  height: 76px;
+  margin: 0 auto;
+}
+.nav-item,
+.nav-title {
+  display: inline-block;
+}
+.nav-item {
+  float: right;
+  margin-top: -30px;
+  padding: 6px 18px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  border: rgba(255, 255, 255, 0.9) solid 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.nav-item:last-child {
+  margin-right: 32px;
+}
+.nav-item:hover,
+.nav-item:active {
+  color: #FFF;
+  border-color: #FFF;
+  box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.nav-title {
+  float: left;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1.4em;
+  color: #FFF;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* ----------------------------------------------------------------
+ * $section1 content
+ * ---------------------------------------------------------------- */
+.section1 {
+  width: 100%;
+  height: 100%!important;
+  background-image: url(../img/scatterCubeCrop01.jpg);
+  background-size: cover;
+}
+.section1 > .row {
+  width: 65%;
+  margin: 0 auto;
+}
+.tag-line {
+  margin: 92px 0;
+  color: #FFF;
+  font-family: giorgio-thin;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.tag-line > h2 {
+  font-size: 3.6em;
+  line-height: 1.2em;
+}
+.info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px 24px;
+  width: auto;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+}
+/* ----------------------------------------------------------------
+ * $section2 content
+ * ---------------------------------------------------------------- */
+.section2 {
+  width: 100%;
+  min-height: 100%;
+  padding: 64px 0;
+  box-sizing: border-box;
+}
+.section2 > .row {
+  width: 65%;
+}
+.panel {
+  height: 192px;
+  margin-bottom: 16px;
+  background-size: cover;
+}
+/* ----------------------------------------------------------------
+ * $section3 content
+ * ---------------------------------------------------------------- */
+.section3 {
+  width: 100%;
+  min-height: 100%;
+  padding: 64px 0;
+  box-sizing: border-box;
+}
+.section3 > .row {
+  width: 65%;
+}
+/* ----------------------------------------------------------------
+ * $section4 content
+ * ---------------------------------------------------------------- */
+.section4 {
+  width: 100%;
+  padding: 64px 0;
+  box-sizing: border-box;
+  color: #BDC3C7;
+  background-color: #2C3E50;
+}
+.section4 > .row {
+  width: 65%;
+}
+.text-content {
+  margin-bottom: 16px!important;
+}
+/* ----------------------------------------------------------------
+ * $utils
+ * ---------------------------------------------------------------- */
+.clearfix:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.center {
+  text-align: center;
+}
