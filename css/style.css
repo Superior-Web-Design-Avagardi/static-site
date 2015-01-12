@@ -96,21 +96,36 @@ a {
  * ---------------------------------------------------------------- */
 @font-face {
   font-family: 'giorgio';
-  src: url('fonts/giorgio.ttf?lhgt3k') format('truetype');
+  src: url('fonts/giorgio.eot?lhgt3k');
   font-weight: normal;
-  font-style: normal;/*src:url('fonts/icomoon.eot?lhgt3k');*/
+  font-style: normal;
+  src:  url('fonts/giorgio.eot?#iefixlhgt3k') format('embedded-opentype'),
+  		url('fonts/giorgio.woff?lhgt3k') format('woff'),
+        url('fonts/giorgio.ttf?lhgt3k') format('truetype'),
+  		url('fonts/giorgio.svg?lhgt3k#icomoon') format('svg');
+  /*src:url('fonts/icomoon.eot?lhgt3k');*/
   /*url('fonts/icomoon.eot?#iefixlhgt3k') format('embedded-opentype'),
   		url('fonts/icomoon.woff?lhgt3k') format('woff'),
   		url('fonts/icomoon.svg?lhgt3k#icomoon') format('svg');*/
 }
 @font-face {
   font-family: 'giorgio-thin';
+  src: url('fonts/giorgio-thin.eot?lhgt3k');
+  font-weight: normal;
+  font-style: normal;
+  src:  url('fonts/giorgio-thin.eot?#iefixlhgt3k') format('embedded-opentype'),
+  		url('fonts/giorgio-thin.woff?lhgt3k') format('woff'),
+        url('fonts/giorgio-thin.ttf?lhgt3k') format('truetype'),
+  		url('fonts/giorgio-thin.svg?lhgt3k#icomoon') format('svg');
+    
+  /*font-family: 'giorgio-thin';
   src: url('fonts/giorgio-thin.ttf?lhgt3k') format('truetype');
   font-weight: normal;
-  font-style: normal;/*src:url('fonts/icomoon.eot?lhgt3k');*/
-  /*url('fonts/icomoon.eot?#iefixlhgt3k') format('embedded-opentype'),
-  		url('fonts/icomoon.woff?lhgt3k') format('woff'),
-  		url('fonts/icomoon.svg?lhgt3k#icomoon') format('svg');*/
+  font-style: normal;src:url('fonts/icomoon.eot?lhgt3k');
+  url('fonts/giorgio-thin.eot?#iefixlhgt3k') format('embedded-opentype'),
+  		url('fonts/giorgio-thin.woff?lhgt3k') format('woff'),
+  		url('fonts/giorgio-thin.svg?lhgt3k#icomoon') format('svg');*/
+
 }
 [class^="icon-"],
 [class*=" icon-"] {
@@ -238,7 +253,7 @@ section1 {
 }
 .nav-item {
   float: right;
-  margin-top: -30px;
+  margin-top: -120px;
   padding: 6px 18px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.9);
@@ -247,7 +262,7 @@ section1 {
   cursor: pointer;
 }
 .nav-item:last-child {
-  margin-right: 32px;
+  margin-right: 192px;
 }
 .nav-item:hover,
 .nav-item:active {
