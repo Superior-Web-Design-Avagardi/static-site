@@ -259,7 +259,7 @@ section1 {
   color: rgba(255, 255, 255, 0.9);
   border: rgba(255, 255, 255, 0.9) solid 2px;
   border-radius: 3px;
-  cursor: pointer;
+  cursor: pointer; 
 }
 .nav-item:last-child {
   margin-right: 192px;
